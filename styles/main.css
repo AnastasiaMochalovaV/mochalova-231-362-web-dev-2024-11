@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main_menu {
+    display: flex;
+    justify-content: center;
+    background-color: #0066cc;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#main_menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+#main_menu a:hover {
+    background-color: #004a99;
+}
+
+.selected {
+    font-weight: bold;
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex: 1;
+}
+
+#content_wrapper {
+    display: flex;
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#product_menu {
+    margin-right: 20px;
+    min-width: 150px;
+}
+
+#product_menu a {
+    display: block;
+    padding: 6px 10px;
+    color: #0066cc;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+#product_menu a.selected {
+    font-weight: bold;
+    color: #0066cc;
+    border: 2px solid #dfe3e8; 
+    padding: 8px; 
+}
+
+#multiplication_table {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+.large td, .large .cell {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.ttRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.cell {
+    flex: 1 1 100%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.number-link {
+    color: #0066cc;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 4px solid #555;
+}
